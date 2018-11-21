@@ -7,6 +7,7 @@ let app = new Vue ({
       userId: 0,
       title: '',
       date:'',
+      location: '',
       cost: '',
       description: '',
       keywords: ''

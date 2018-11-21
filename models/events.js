@@ -30,6 +30,10 @@ const Event = sequelize.define('event', {
     type: Sequelize.STRING(100),
     allowNull: false
   },
+  location: {
+    type: Sequelize.STRING(45),
+    allowNull: false
+  },
 }, {
   timestamps: false
 });

@@ -4,8 +4,8 @@ const Sequelize = require('sequelize');
 
 const sequelize = require('../db/connection.js').sequelize;
 
-const Event = sequelize.define('event', {
-  user_id: {
+const Event = sequelize.define('userEvent', {
+  eventID: {
     type: Sequelize.BIGINT(11),
     primaryKey: true,
     allowNull: false
@@ -31,6 +31,10 @@ const Event = sequelize.define('event', {
     allowNull: false
   },
   location: {
+    type: Sequelize.STRING(45),
+    allowNull: false
+  },
+  fbUserID: {
     type: Sequelize.STRING(45),
     allowNull: false
   },
